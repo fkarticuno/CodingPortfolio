@@ -1,16 +1,32 @@
 div {
     background-color: goldenrod;
 }
-#head, #foot, #break, #header, #footer {
-    margin: 0 auto;
-    text-align: center;
-    background-color: palegoldenrod;
+iframe {
+    height: 200%;
+    width: 200%;
+    transform: scale(.50);
+    transform-origin: 0 0;
+    margin-bottom: 100px;
+    padding: 0px;
 }
 img {
     height: 150px;
     width: 150px;
     border: 2px solid black;
     border-radius: 25px;
+}
+p {
+    background-color: palegoldenrod;
+    border-radius: 25px;   
+}
+#head, #foot, #break, #header, #footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: palegoldenrod;
+}
+#titles {
+    text-align: center;
+    font-weight: bold;
 }
 .icon {
     height: 20px;
@@ -21,16 +37,4 @@ img {
     width: 150px;
     margin: 5px;
 }
-iframe {
-    height: 200%;
-    width: 200%;
-    transform: scale(.50);
-    transform-origin: 0 0;
-    margin-bottom: 100px;
-    padding: 0px;
-}
 
-#titles {
-    text-align: center;
-    font-weight: bold;
-}
