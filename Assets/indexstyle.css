@@ -1,5 +1,15 @@
+@keyframes imgshake {
+    0% {left: 0px; top:-60px; transform: rotate(0deg);}
+    50% {left: 100px; transform: rotate(20deg)}
+    100% {left: 0px; top:0px; transform: rotate(-20deg);}
+}
+body {
+    background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+}
 div {
     background-color: goldenrod;
+    opacity: .99;
 }
 iframe {
     height: 200%;
@@ -19,19 +29,26 @@ p {
     background-color: palegoldenrod;
     border-radius: 25px;   
 }
+img:hover{
+    animation: imgshake .4s linear 0s infinite alternate;
+}
+h3:hover,h2:hover {
+    color: green;
+}
 #head, #foot, #break, #header, #footer {
     margin: 0 auto;
     text-align: center;
     background-color: palegoldenrod;
 }
 #description {
-    background-color: palegoldenrod;
-    margin:2px;
     padding: 0px;
 }
 #titles {
     text-align: center;
     font-weight: bold;
+}
+#cont {
+    opacity: .8;
 }
 .icon {
     height: 20px;
@@ -79,7 +96,7 @@ p {
     #demo {
         text-align: center;
         margin: 0px auto;
-        padding: 0px;
+        padding: 0px auto;
         overflow: hidden;
         margin-bottom: -150px;
     }

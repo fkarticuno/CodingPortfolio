@@ -26,6 +26,7 @@ var desc = [
     "description for item 10",
 ]
 
+$('#01').on('click', function() {alert($(this),'was clicked!')});
 
 $('#01').click(function() {
     $('#titles').text(title[1])
