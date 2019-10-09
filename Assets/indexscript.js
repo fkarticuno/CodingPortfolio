@@ -1,4 +1,5 @@
 console.log("linked")
+var source;
 var title = [
     "skipped",
     "01-HTML CSS GIT",
@@ -26,65 +27,71 @@ var desc = [
     "description for item 10",
 ]
 
-$('#01').on('click', function() {alert($(this),'was clicked!')});
-
-$('#01').click(function() {
+$('#img01').click(function() {
     $('#titles').text(title[1])
     $('#description').text(desc[1])
-    $('iframe').attr('src',$('#01').attr('alt'))
+    $('iframe').attr('src',$('#img01').attr('alt'))
 })
 
-$('#02').on('click',function() {
+$('#img02').on('click',function() {
     $('#titles').text(title[2])
     $('#description').text(desc[2])
-    $('iframe').attr('src',$('#02').attr('alt'))
+    $('iframe').attr('src',$('#img02').attr('alt'))
 })
 
-$('#03').on('click',function() {
+$('#img03').on('click',function() {
     $('#titles').text(title[3])
     $('#description').text(desc[3])
-    $('iframe').attr('src',$('#03').attr('alt'))
+    $('iframe').attr('src',$('#img03').attr('alt'))
 })
 
-$('#04').on('click',function() {
+$('#img04').on('click',function() {
     $('#titles').text(title[4])
     $('#description').text(desc[4])
-    $('iframe').attr('src',$('#04').attr('alt'))
+    $('iframe').attr('src',$('#img04').attr('alt'))
 })
 
-$('#05').on('click',function() {
+$('#img05').on('click',function() {
     $('#titles').text(title[5])
     $('#description').text(desc[5])
-    $('iframe').attr('src',$('#05').attr('alt'))
+    $('iframe').attr('src',$('#img05').attr('alt'))
 })
 
-$('#06').on('click',function() {
+$('#img06').on('click',function() {
     $('#titles').text(title[6])
     $('#description').text(desc[6])
-    $('iframe').attr('src',$('#06').attr('alt'))
+    $('iframe').attr('src',$('#img06').attr('alt'))
 })
 
-$('#07').on('click',function() {
-    $('#titles').text(title[7])
-    $('#description').text(desc[7])
-    $('iframe').attr('src',$('#07').attr('alt'))
-})
+// $('#img07').on('click',function() {
+//     $('#titles').text(title[7])
+//     $('#description').text(desc[7])
+//     $('iframe').attr('src',$('#img07').attr('alt'))
+// })
 
-$('#08').on('click',function() {
+$('#img08').on('click',function() {
     $('#titles').text(title[8])
     $('#description').text(desc[8])
-    $('iframe').attr('src',$('#08').attr('alt'))
+    $('iframe').attr('src',$('#img08').attr('alt'))
 })
 
-$('#09').on('click',function() {
+$('#img09').on('click',function() {
     $('#titles').text(title[9])
     $('#description').text(desc[09])
-    $('iframe').attr('src',$('#09').attr('alt'))
+    $('iframe').attr('src',$('#img09').attr('alt'))
 })
 
-$('#10').on('click',function() {
+$('#img10').on('click',function() {
     $('#titles').Text(title[10])
     $('#description').Text(desc[10])
-    $('iframe').attr('src',$('#10').attr('alt'))
+    $('iframe').attr('src',$('#img10').attr('alt'))
 })
 
+$('#img07').on('click',populate(7))
+
+function populate(x) {
+    $('#titles').Text(title[x])
+    $('#description').Text(desc[x])
+    source = '#img' + x;
+    $('iframe').attr('src',$("'"+source+"'").attr('alt'))
+}
