@@ -63,11 +63,11 @@ $('#img06').on('click',function() {
     $('iframe').attr('src',$('#img06').attr('alt'))
 })
 
-// $('#img07').on('click',function() {
-//     $('#titles').text(title[7])
-//     $('#description').text(desc[7])
-//     $('iframe').attr('src',$('#img07').attr('alt'))
-// })
+$('#img07').on('click',function() {
+    $('#titles').text(title[7])
+    $('#description').text(desc[7])
+    $('iframe').attr('src',$('#img07').attr('alt'))
+})
 
 $('#img08').on('click',function() {
     $('#titles').text(title[8])
@@ -87,11 +87,29 @@ $('#img10').on('click',function() {
     $('iframe').attr('src',$('#img10').attr('alt'))
 })
 
+/* click functions do not trigger 
+    as expected when passed params and 
+    named functions
+$('#img01').click(populate(1))
+$('#img02').on('click',populate(2))
+$('#img03').on('click',populate(3))
+$('#img04').on('click',populate(4))
+$('#img05').on('click',populate(5))
+$('#img06').on('click',populate(6))
 $('#img07').on('click',populate(7))
+$('#img08').on('click',populate(8))
+$('#img09').on('click',populate(9))
+$('#img10').on('click',populate(10))
+
 
 function populate(x) {
-    $('#titles').Text(title[x])
-    $('#description').Text(desc[x])
-    source = '#img' + x;
-    $('iframe').attr('src',$("'"+source+"'").attr('alt'))
+    $('#titles').text(title[x])
+    $('#description').text(desc[x])
+    if (x<10) {
+        source = '#img0' + x;
+    } else {
+        source = '#img' + x;
+    };
+    $('iframe').attr('src',$(source).attr('alt'))
 }
+*/
