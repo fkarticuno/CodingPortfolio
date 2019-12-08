@@ -43,7 +43,6 @@ h3:hover,h2:hover {
     text-align: center;
     background-color: palegoldenrod;
 }
-
 #head {
     margin: 0 auto;
     text-align: left;
@@ -57,8 +56,10 @@ h3:hover,h2:hover {
     opacity: .8;
 }
 .icon {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 0px;
 }
 .thumbs {
     height: 150px;
@@ -88,7 +89,10 @@ h3:hover,h2:hover {
         text-align: center;
     }
     .icon {
-        border-radius: 25px;
+        height: 35px;
+        width: 35px;
+        border: none;
+        border-radius: 0px;
     }
     .thumbs {
         height: 40px;
