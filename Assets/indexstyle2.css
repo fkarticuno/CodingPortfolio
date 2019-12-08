@@ -112,6 +112,11 @@ h3:hover,h2:hover {
     #foot, #break {
         display: none;
     }
+    .about {
+        height: 70%;
+        overflow-x: scroll;
+        margin-bottom: -200%;
+    }
 }
 
 @media screen and (max-width: 980px) {  
