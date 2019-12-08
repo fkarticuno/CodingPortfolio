@@ -98,6 +98,7 @@ h3:hover,h2:hover {
     }   
     #description {
         font-size: 50%;
+        padding:10%
     }
     #demo {
         text-align: center;
