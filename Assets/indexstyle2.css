@@ -98,12 +98,14 @@ h3:hover,h2:hover {
     }   
     #description {
         font-size: 50%;
-        padding:10%
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
     }
     #demo {
-        text-align: center;
         margin: 0px auto;
-        padding: 0px auto;
+        padding-left: 10%;
+        padding-right: 10%;
         overflow: hidden;
         margin-bottom: -150px;
     }
