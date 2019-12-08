@@ -1,0 +1,126 @@
+@keyframes imgshake {
+    0% {left: 0px; top:-60px; transform: rotate(0deg);}
+    50% {left: 100px; transform: rotate(20deg)}
+    100% {left: 0px; top:0px; transform: rotate(-20deg);}
+}
+body,html {
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div {
+    background-color: goldenrod;
+    opacity: .99;
+}
+iframe {
+    height: 200%;
+    width: 200%;
+    transform: scale(.50);
+    transform-origin: 0 0;
+    margin-bottom: 100px;
+    padding: 0px;
+}
+img {
+    height: 210px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+p {
+    background-color: palegoldenrod;
+    border-radius: 5px;   
+}
+img:hover{
+    animation: imgshake .4s linear 0s infinite alternate;
+}
+h3:hover,h2:hover {
+    color: green;
+}
+#foot, #break, #header, #footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: palegoldenrod;
+}
+
+#head {
+    margin: 0 auto;
+    text-align: left;
+    background-color: palegoldenrod;
+    opacity: .8;
+}
+#description {
+    padding: 0px;
+}
+#titles {
+    text-align: center;
+    font-weight: bold;
+}
+#cont {
+    opacity: .8;
+}
+.icon {
+    height: 20px;
+    width: 20px;
+}
+.thumbs {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+}
+
+/* Media Query For Mobile */
+@media screen and (max-width: 550px) {  
+    iframe {
+        height: 200%;
+        width: 300%;
+        transform: scale(.20);
+        transform-origin: 0 0;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 5px;
+    }
+    p {
+        margin: 1px;
+        padding: 2px;
+    }
+    h3 {
+        text-align: center;
+    }
+    .icon {
+        border-radius: 25px;
+    }
+    .thumbs {
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+        padding: 1px;
+    }   
+    #description {
+        font-size: 50%;
+    }
+    #demo {
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px auto;
+        overflow: hidden;
+        margin-bottom: -150px;
+    }
+    #foot, #break {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {  
+    
+}
+@media screen and (max-width: 768px) {  
+    
+}
+@media screen and (max-width: 640px) {  
+    
+}

@@ -1,0 +1,1 @@
+In this activity, I created an Amazon-like storefront with the MySQL skills I learned this unit. The app will take in orders from customers and deplete stock from the store's inventory. I Made sure to save and require the MySQL and Inquirer npm packages in my homework files--the app will need them for data input and storage.

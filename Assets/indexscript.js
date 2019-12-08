@@ -12,6 +12,14 @@ var title = [
     "08-PROJECT 1",
     "09-PORTFOLIO UPDATE",
     "10-NODEJS",
+    "11-JS CONSTRUCTORS",
+    "12-MYSQL",
+    "13-EXPRESS",
+    "14-HANDLEBARS",
+    "15-SEQUELIZE",
+    "16-PROJECT 2",
+    "17-PROJECT 2",
+    "18-MONGO & MONGOOSE"
 ]
 var desc = [
     "skipped",
@@ -24,7 +32,15 @@ var desc = [
     "In this assignment, I created a train schedule application that incorporates Firebase to host arrival and departure data. my app will retrieve and manipulate this information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.",
     "In this assignment my project goal was to Build Something Awesome. I used xx APIs, AJAX to pull data, utilized at least one new library (animate CSS), had a polished frontend / UI, met good quality coding standards (indentation, scoping, naming), I did use alerts, confirms, or prompts, utilized repeating elements (table, columns, etc), used Bootstrap, added User Input Validation, and deployed it to Github",
     "In this assignment I compiled a portfolio consisting of: links to my GitHub profile & LinkedIn page as well as my email address and phone number, a link to a PDF of my resume, a list of previous projects with titles, descriptions, and demos",
-    "description for item 10",
+    "In this assignment, I made LIRI. LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives us back data.",
+    "null",
+    "In this activity, I created an Amazon-like storefront with the MySQL skills I learned this unit. The app will take in orders from customers and deplete stock from the store's inventory. I Made sure to save and require the MySQL and Inquirer npm packages in my homework files--the app will need them for data input and storage.",
+    "In this activity, I built a compatibility-based 'FriendFinder' application -- basically a dating app. This full-stack site will take in results from users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+    "null",
+    "In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I followed the MVC design pattern; used Node and MySQL to query and route data in my app. Then I Sequelized the `Burger` app to provide myself with the most reasonable challenge.",
+    "This project used a Node and Express Web Server, is backed by a MySQL Database an ORM, has both GET and POST routes for retrieving and adding new data was deployed using Heroku (with Data), utilizes at least one new library, package, or technology that we had not discussed in class, has a polished frontend / UI, has folder structure that meets MVC Paradigm and meets good quality coding standards (indentation, scoping, naming).",
+    "null",
+    "In this assignment, I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I flex my Mongoose and Cheerio muscles to scrape news from another site."
 ]
 
 $('#img01').click(function() {
@@ -82,11 +98,74 @@ $('#img09').on('click',function() {
 })
 
 $('#img10').on('click',function() {
-    $('#titles').Text(title[10])
-    $('#description').Text(desc[10])
+    $('#titles').text(title[10])
+    $('#description').text(desc[10])
     $('iframe').attr('src',$('#img10').attr('alt'))
 })
 
+$('#img11').on('click',function() {
+    $('#titles').text(title[11])
+    $('#description').text(desc[11])
+    $('iframe').attr('src',$('#img11').attr('alt'))
+})
+
+$('#img12').on('click',function() {
+    $('#titles').text(title[12])
+    $('#description').text(desc[12])
+    $('iframe').attr('src',$('#img12').attr('alt'))
+})
+
+$('#img13').on('click',function() {
+    $('#titles').text(title[13])
+    $('#description').text(desc[13])
+    $('iframe').attr('src',$('#img13').attr('alt'))
+})
+
+$('#img14').on('click',function() {
+    $('#titles').text(title[14])
+    $('#description').text(desc[14])
+    $('iframe').attr('src',$('#img14').attr('alt'))
+})
+
+$('#img15').on('click',function() {
+    $('#titles').text(title[15])
+    $('#description').text(desc[15])
+    $('iframe').attr('src',$('#img15').attr('alt'))
+})
+
+$('#img16').on('click',function() {
+    $('#titles').text(title[16])
+    $('#description').text(desc[16])
+    $('iframe').attr('src',$('#img16').attr('alt'))
+})
+
+$('#img17').on('click',function() {
+    $('#titles').text(title[17])
+    $('#description').text(desc[17])
+    $('iframe').attr('src',$('#img17').attr('alt'))
+})
+
+$('#img18').on('click',function() {
+    $('#titles').text(title[18])
+    $('#description').text(desc[18])
+    $('iframe').attr('src',$('#img18').attr('alt'))
+})
+
+$('#img19').on('click',function() {
+    $('#titles').text(title[19])
+    $('#description').text(desc[19])
+    $('iframe').attr('src',$('#img19').attr('alt'))
+})
+
+$('document').ready(function(){
+    $('#img11').attr('src','./Assets/Images/00.png')
+    $('#img12').attr('src','./Assets/Images/00.png')
+    $('#img13').attr('src','./Assets/Images/00.png')
+    $('#img14').attr('src','./Assets/Images/00.png')
+    $('#img17').attr('src','./Assets/Images/00.png')
+    $('#img18').attr('src','./Assets/Images/00.png')
+    
+})
 /* click functions do not trigger 
     as expected when passed params and 
     named functions
