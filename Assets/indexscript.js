@@ -160,7 +160,6 @@ $('#img19').on('click',function() {
 $('document').ready(function(){
     $('#img11').attr('src','./Assets/Images/00.png')
     $('#img12').attr('src','./Assets/Images/00.png')
-    $('#img13').attr('src','./Assets/Images/00.png')
     $('#img14').attr('src','./Assets/Images/00.png')
     $('#img17').attr('src','./Assets/Images/00.png')
     $('#img18').attr('src','./Assets/Images/00.png')
@@ -179,7 +178,6 @@ $('#img07').on('click',populate(7))
 $('#img08').on('click',populate(8))
 $('#img09').on('click',populate(9))
 $('#img10').on('click',populate(10))
-
 
 function populate(x) {
     $('#titles').text(title[x])
