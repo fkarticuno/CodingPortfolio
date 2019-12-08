@@ -1,5 +1,4 @@
 console.log("linked")
-var source;
 var title = [
     "skipped",
     "01-HTML CSS GIT",
@@ -42,151 +41,29 @@ var desc = [
     "null",
     "In this assignment, I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I flex my Mongoose and Cheerio muscles to scrape news from another site."
 ]
-
-$('#img01').click(function() {
-    $('#titles').text(title[1])
-    $('#description').text(desc[1])
-    $('iframe').attr('src',$('#img01').attr('alt'))
-})
-
-$('#img02').on('click',function() {
-    $('#titles').text(title[2])
-    $('#description').text(desc[2])
-    $('iframe').attr('src',$('#img02').attr('alt'))
-})
-
-$('#img03').on('click',function() {
-    $('#titles').text(title[3])
-    $('#description').text(desc[3])
-    $('iframe').attr('src',$('#img03').attr('alt'))
-})
-
-$('#img04').on('click',function() {
-    $('#titles').text(title[4])
-    $('#description').text(desc[4])
-    $('iframe').attr('src',$('#img04').attr('alt'))
-})
-
-$('#img05').on('click',function() {
-    $('#titles').text(title[5])
-    $('#description').text(desc[5])
-    $('iframe').attr('src',$('#img05').attr('alt'))
-})
-
-$('#img06').on('click',function() {
-    $('#titles').text(title[6])
-    $('#description').text(desc[6])
-    $('iframe').attr('src',$('#img06').attr('alt'))
-})
-
-$('#img07').on('click',function() {
-    $('#titles').text(title[7])
-    $('#description').text(desc[7])
-    $('iframe').attr('src',$('#img07').attr('alt'))
-})
-
-$('#img08').on('click',function() {
-    $('#titles').text(title[8])
-    $('#description').text(desc[8])
-    $('iframe').attr('src',$('#img08').attr('alt'))
-})
-
-$('#img09').on('click',function() {
-    $('#titles').text(title[9])
-    $('#description').text(desc[09])
-    $('iframe').attr('src',$('#img09').attr('alt'))
-})
-
-$('#img10').on('click',function() {
-    $('#titles').text(title[10])
-    $('#description').text(desc[10])
-    $('iframe').attr('src',$('#img10').attr('alt'))
-})
-
-$('#img11').on('click',function() {
-    $('#titles').text(title[11])
-    $('#description').text(desc[11])
-    $('iframe').attr('src',$('#img11').attr('alt'))
-})
-
-$('#img12').on('click',function() {
-    $('#titles').text(title[12])
-    $('#description').text(desc[12])
-    $('iframe').attr('src',$('#img12').attr('alt'))
-})
-
-$('#img13').on('click',function() {
-    $('#titles').text(title[13])
-    $('#description').text(desc[13])
-    $('iframe').attr('src',$('#img13').attr('alt'))
-})
-
-$('#img14').on('click',function() {
-    $('#titles').text(title[14])
-    $('#description').text(desc[14])
-    $('iframe').attr('src',$('#img14').attr('alt'))
-})
-
-$('#img15').on('click',function() {
-    $('#titles').text(title[15])
-    $('#description').text(desc[15])
-    $('iframe').attr('src',$('#img15').attr('alt'))
-})
-
-$('#img16').on('click',function() {
-    $('#titles').text(title[16])
-    $('#description').text(desc[16])
-    $('iframe').attr('src',$('#img16').attr('alt'))
-})
-
-$('#img17').on('click',function() {
-    $('#titles').text(title[17])
-    $('#description').text(desc[17])
-    $('iframe').attr('src',$('#img17').attr('alt'))
-})
-
-$('#img18').on('click',function() {
-    $('#titles').text(title[18])
-    $('#description').text(desc[18])
-    $('iframe').attr('src',$('#img18').attr('alt'))
-})
-
-$('#img19').on('click',function() {
-    $('#titles').text(title[19])
-    $('#description').text(desc[19])
-    $('iframe').attr('src',$('#img19').attr('alt'))
-})
-
+// $('#img01').click(function() {
+//     $('#titles').text(title[1])
+//     $('#description').text(desc[1])
+//     $('iframe').attr('src',$('#img01').attr('alt'))
+// })
 $('document').ready(function(){
     $('#img11').attr('src','./Assets/Images/00.png')
     $('#img12').attr('src','./Assets/Images/00.png')
     $('#img14').attr('src','./Assets/Images/00.png')
     $('#img17').attr('src','./Assets/Images/00.png')
     $('#img18').attr('src','./Assets/Images/00.png')
-    
-})
-/* click functions do not trigger 
-    as expected when passed params and 
-    named functions
-$('#img01').click(populate(1))
-$('#img02').on('click',populate(2))
-$('#img03').on('click',populate(3))
-$('#img04').on('click',populate(4))
-$('#img05').on('click',populate(5))
-$('#img06').on('click',populate(6))
-$('#img07').on('click',populate(7))
-$('#img08').on('click',populate(8))
-$('#img09').on('click',populate(9))
-$('#img10').on('click',populate(10))
 
-function populate(x) {
+    $('.thumbs').on('click',function(){
+        num = ($(this)[0].id).slice(3)
+        if (num<10) {
+            num = num.slice(1)
+        }
+        populate(num,$(this)[0].alt)
+    })
+})
+function populate(x,y) {
+    console.log('attempting to populate with', x)
     $('#titles').text(title[x])
     $('#description').text(desc[x])
-    if (x<10) {
-        source = '#img0' + x;
-    } else {
-        source = '#img' + x;
-    };
-    $('iframe').attr('src',$(source).attr('alt'))
+    $('iframe').attr('src',y)
 }
-*/
