@@ -63,7 +63,7 @@ $('document').ready(function(){
 })
 function populate(x,y) {
     console.log('attempting to populate with', x)
-    $('#titles').text(title[x])
+    $('#titles').html(`<a href='${y}'>${title[x]}</a>`)
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
 }
