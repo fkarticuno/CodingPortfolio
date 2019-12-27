@@ -1,10 +1,4 @@
 # CodingPortfolio
 
-This Repo consolidates and explains my completed bootcamp assignments and includes live demos.
-
-Project Details - Each project has:
-Short description of the problem being solved
-List of the concepts and technologies used in the applications
-Link to GitHub repo
-Link to deployed project
-A sample guest account if authentication is necessary
+Coding Portfolio / [https://fkarticuno.github.io/CodingPortfolio/]
+ This portfolio displays progress and achievements developing basic, intermediate and advanced apps using various languages, packages, frameworks, engines and database models. All culminating into a demo friendly environment to showcase the expertise gained through countless hours of development and refactoring.
