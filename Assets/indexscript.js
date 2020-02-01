@@ -16,9 +16,10 @@ var title = [
     "13-EXPRESS",
     "14-HANDLEBARS",
     "15-SEQUELIZE",
-    "16-PROJECT 2",
+    "16-PROJECT 2 Drinking Well",
     "17-PROJECT 2",
-    "18-MONGO & MONGOOSE"
+    "18-MONGO & MONGOOSE",
+    "19-PROJECT 3 MONETA"
 ]
 var desc = [
     "This document outlines my work history and is used in tandem with my coding portfolio to cover more ground.",
@@ -39,8 +40,34 @@ var desc = [
     "In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I followed the MVC design pattern; used Node and MySQL to query and route data in my app. Then I Sequelized the `Burger` app to provide myself with the most reasonable challenge.",
     "This project used a Node and Express Web Server, is backed by a MySQL Database an ORM, has both GET and POST routes for retrieving and adding new data was deployed using Heroku (with Data), utilizes at least one new library, package, or technology that we had not discussed in class, has a polished frontend / UI, has folder structure that meets MVC Paradigm and meets good quality coding standards (indentation, scoping, naming).",
     "null",
-    "In this assignment, I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I flex my Mongoose and Cheerio muscles to scrape news from another site."
+    "In this assignment, I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I flex my Mongoose and Cheerio muscles to scrape news from another site.",
+    "Moneta is a platform for patients at any stage of Alzheimer's/Dementia to keep their mind and brain stimulated. Brain teasers/memory/image and word association games have been scientifically provedn to be useful throughout the lives of people afflicted with the disease. While additionally, music can play an important role."
 ]
+var repo = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "https://github.com/vin-cent321/Moneta",
+
+
+]
+
 // $('#img01').click(function() {
 //     $('#titles').text(title[1])
 //     $('#description').text(desc[1])
@@ -63,7 +90,7 @@ $('document').ready(function(){
 })
 function populate(x,y) {
     console.log('attempting to populate with', x)
-    $('#titles').html(`<a href='${y}'>${title[x]}</a>`)
+    $('#titles').html(`<a href='${y}'>${title[x]}</a><div><a href='${repo[x]}'>${repo[x]}</a></div>`)
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
 }
