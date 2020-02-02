@@ -1,0 +1,32 @@
+html {
+    margin: 5px;
+    padding: 0px;
+    overflow: hidden;
+}
+img {
+    height: 210px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.icon {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 0px;
+}
+.thumbs {
+    height: 125px;
+    width: 125px;
+    margin: 5px;
+}
+iframe {
+    height: 90%;
+    width: 100%;
+    transform: scale(0.90);
+    
+}
+
+.morph {
+    height: 55vh;
+}
