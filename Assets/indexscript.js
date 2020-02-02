@@ -44,7 +44,7 @@ var desc = [
     "Moneta is a platform for patients at any stage of Alzheimer's/Dementia to keep their mind and brain stimulated. Brain teasers/memory/image and word association games have been scientifically provedn to be useful throughout the lives of people afflicted with the disease. While additionally, music can play an important role."
 ]
 var repo = [
-    "https://fkarticuno.github.io/CodingPortfolio/Resume_2020.pdf",
+    "https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf",
     "1",
     "2",
     "3",
