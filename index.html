@@ -1,137 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/indexstyle3.css">
     
+    <!-- Jquery JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src ='https://www.gstatic.com/firebasejs/live/3.0/firebase.js'></script>
-    <script src ="https://momentjs.com/downloads/moment.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="Assets/indexstyle2.css">
-    
-    <title>Portfolio</title>
-</head>
-<body>
-    
-<div class="row" id="head">
-    <div class="col-md-6">
-        <h3>
-            ABOUT:
-        </h3>
-        <p class="about">
-            Full-Stack Web Developer leveraging experience in numerous frameworks and languages. Certified in Full Stack Development from the University Of Richmond's Coding Bootcamp, with deepened skills in JavaScript, Css, Node.js, HTML, SQL, and responsive web designs. Known as a curious mind with a continuous focus on the next steps and continuous improvement. With each project, the goal is to use current knowledge to develop a stable platform from which to expand from the minimum viable product into the frontiers of technology. Having applied aspects of UX, UI, and agile development during projects working in a team of four to develop an app aimed at consumers interested in finding brick and mortar resources ranging from nearby schools, restaurants, housing, and more. Excited to leverage skills in the future as part of a fast-paced, quality-driven team in order to build better experiences on the web and develop more concise code for the future.  
-        </p>
-    </div>
-    <div class="col-md-2">
-        <h3>
-            CONTACT:
-        </h3>
-        <p>
-            <img class="icon" src="https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> Frederick Articuno
-        </p>
-        <p>
-            <img class="icon" src="https://img.icons8.com/plasticine/2x/company.png"> Colonial Heights, Va
-        </p>
-        <p>
-            <img class="icon" src="https://img.icons8.com/ultraviolet/2x/phone-office.png"> <a href="tel:8047040334">804 704 0334</a>
-        </p>
-        <p>
-            <img class="icon" src="https://img.icons8.com/dusk/2x/email.png"> <a href="mailto:mckiyoshi@gmail.com"> mckiyoshi@gmail.com</a>
-        </p> 
-    </div>
-    <div class="col-md-2">
-        <h3>
-            LINKS:
-        </h3>
-        <p>
-           <img class="icon" src="https://tinyurl.com/yyfhnv7r" alt="L-In"> <a href="https://www.linkedin.com/in/frederick-articuno/">LinkedIn</a> 
-        </p>
-        <p>
-           <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="ghub"> <a href="https://github.com/fkarticuno">Github</a> 
-        </p>
-        <p>
-           <img class="icon" src="https://img.icons8.com/carbon-copy/2x/resume.png" alt="Res"> <a href="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf">Resume</a> 
-        </p>
-        <p>
-           <img class="icon" src="https://img.icons8.com/plasticine/2x/resume.png" alt="ghub"> <a href="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/FKA-BS.pdf">Brand Statement</a> 
-        </p>
-    </div>
-    <div class="col-md-2">
-        <h3>
-            PHOTO:
-        </h3>
-        <img src="https://tinyurl.com/yyquzu6m" alt="my photo">
-    </div>
-</div><!--end head--><br>
-
-<div id="container">
-
-    <div class="row" id="bodycontent">
-        <div class="col-md-5">
-            <h3>
-                PROJECTS:
-            </h3>
-            <marquee behavior="alternate">Click Image To Demo Here, Click Title For Full Page</marquee>
-            <!-- <img class="thumbs" id="img01" src="./Assets/Images/01.png" alt="https://fkarticuno.github.io/BC_Classwork/02-css-bootstrap/02-Homework/bootstrap-portfolio/index.html">
-            <img class="thumbs" id="img02" src="./Assets/Images/02.png" alt="https://fkarticuno.github.io/BC_Classwork/02-css-bootstrap/02-Homework/responsive-portfolio/index.html">
-            <img class="thumbs" id="img03" src="./Assets/Images/03.png" alt="https://fkarticuno.github.io/BC_Classwork/03-javascript/02-Homework/Psychic2/index.html">
-            <img class="thumbs" id="img04" src="./Assets/Images/04.png" alt="https://fkarticuno.github.io/unit-4-game/index.html">
-            <img class="thumbs" id="img05" src="./Assets/Images/05.png" alt="https://fkarticuno.github.io/TriviaGame/TriviaGame-2/index.html">
-            <img class="thumbs" id="img06" src="./Assets/Images/06.png" alt="https://fkarticuno.github.io/HW06CatGif/index.html">
-            <img class="thumbs" id="img07" src="./Assets/Images/07.png" alt="https://fkarticuno.github.io/RPS-Train/TrainSchedule/index.html">
-            <img class="thumbs" id="img08" src="./Assets/Images/08.png" alt="https://fkarticuno.github.io/DIVidends/Login/logindex.html">
-            <img class="thumbs" id="img09" src="./Assets/Images/09.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html">
-            
-            <img class="thumbs" id="img10" src="./Assets/Images/10.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html">
-            <img class="thumbs" id="img11" src="./Assets/Images/11.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html">
-            <img class="thumbs" id="img12" src="./Assets/Images/12.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html"> -->
-            <img class="thumbs" id="img13" src="./Assets/Images/13.png" alt="https://friendfinder-fka.herokuapp.com/">
-            <!-- <img class="thumbs" id="img14" src="./Assets/Images/14.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html"> -->
-            <img class="thumbs" id="img15" src="./Assets/Images/15.png" alt="https://eat-da-burger-fka.herokuapp.com/">
-            <img class="thumbs" id="img16" src="./Assets/Images/16.png" alt="https://sheltered-spire-36283.herokuapp.com/">
-            <!--<img class="thumbs" id="img17" src="./Assets/Images/17.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html">
-            <img class="thumbs" id="img18" src="./Assets/Images/18.png" alt="https://fkarticuno.github.io/CodingPortfolio/index.html"> -->
-    
-            <img class="thumbs" id="img19" src="./Assets/Images/19.png" alt="https://mc-moneta.herokuapp.com/">
-            <img class="thumbs" id="img00" src="https://tinyurl.com/yyquzu6m" alt="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf">
+    <title>Coding Portfolio</title>
+  </head>
+  <body>
+    <div class="card head">
+        <div class="card-header">
+          Welcome To My Coding Portfolio
         </div>
+      </div> <br/>
+    <!--about-->
+    <div class="row">
         
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col-md-12" >
-                    <h3 id="titles" >
-                       <a href="https://sheltered-spire-36283.herokuapp.com/"> 16-PROJECT 2</a>
-                    </h3>
+        <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-header">Contact</h5>
+                <p class="card-text">
+                  <img class="icon" src="https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> Frederick Articuno
+              </p>
+              <p class="card-text">
+                  <img class="icon" src="https://img.icons8.com/plasticine/2x/company.png"> Colonial Heights, Va
+              </p>
+              <p class="card-text">
+                  <img class="icon" src="https://img.icons8.com/ultraviolet/2x/phone-office.png"> <a href="tel:8047040334">804 704 0334</a>
+              </p>
+              <p class="card-text">
+                  <img class="icon" src="https://img.icons8.com/dusk/2x/email.png"> <a href="mailto:mckiyoshi@gmail.com"> mckiyoshi@gmail.com</a>
+              </p> 
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 about">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-header">About</h5>
+                <p>
+                    Full-Stack Web Developer leveraging experience in numerous frameworks and languages. Certified in Full Stack Development from the University Of Richmond's Coding Bootcamp, with deepened skills in JavaScript, Css, Node.js, HTML, SQL, and responsive web designs. Known as a curious mind with a continuous focus on the next steps and continuous improvement. With each project, the goal is to use current knowledge to develop a stable platform from which to expand from the minimum viable product into the frontiers of technology. Having applied aspects of UX, UI, and agile development during projects working in a team of four to develop an app aimed at consumers interested in finding local resources ranging from nearby schools, restaurants, housing, and more. Excited to leverage skills in the future as part of a fast-paced, quality-driven team in order to build better experiences on the web and develop more concise code for the future.  
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-header">Links</h5>
+                <p class="card-text">
+                    <img class="icon" src="https://tinyurl.com/yyfhnv7r" alt="L-In"> <a href="https://www.linkedin.com/in/frederick-articuno/">LinkedIn</a> 
+                </p>
+                <p class="card-text">
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="ghub"> <a href="https://github.com/fkarticuno">Github</a> 
+                </p>
+                <p class="card-text">
+                    <img class="icon" src="https://img.icons8.com/carbon-copy/2x/resume.png" alt="Res"> <a href="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf">Resume</a> 
+                </p>
+                <p class="card-text">
+                    <img class="icon" src="https://img.icons8.com/plasticine/2x/resume.png" alt="ghub"> <a href="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/FKA-BS.pdf">Brand Statement</a> 
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+      <br/>
+      <div class="row">
+        
+        <div class="col-sm-3">
+            <div class="card morph">
+                <div class="card-body">
+                    <h5 class="card-header">Projects</h5>
+                    <img class="thumbs" id="img13" src="./Assets/Images/13.png" alt="https://friendfinder-fka.herokuapp.com/">
+                    <img class="thumbs" id="img15" src="./Assets/Images/15.png" alt="https://eat-da-burger-fka.herokuapp.com/">
+                    <img class="thumbs" id="img16" src="./Assets/Images/16.png" alt="https://sheltered-spire-36283.herokuapp.com/">  
+                    <img class="thumbs" id="img19" src="./Assets/Images/19.png" alt="https://mc-moneta.herokuapp.com/">
+                    <img class="thumbs" id="img00" src="https://tinyurl.com/yyquzu6m" alt="https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10" id="description">                
-                        This project used a Node and Express Web Server, is backed by a MySQL Database an ORM, has both GET and POST routes for retrieving and adding new data was deployed using Heroku (with Data), utilizes at least one new library, package, or technology that we had not discussed in class, has a polished frontend / UI, has folder structure that meets MVC Paradigm and meets good quality coding standards (indentation, scoping, naming).
+        </div>
+        <div class="col-sm-6">
+            <div class="card morph">
+                <div class="card-body ">
+                    <h5 class="card-header"> Live Demo <div id='titles'></div></h5>
+                    <iframe class="iframe" src="https://sheltered-spire-36283.herokuapp.com/"></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12" id="demo">
-                    <iframe src="https://sheltered-spire-36283.herokuapp.com/"></iframe>
+        </div>
+        <div class="col-sm-3">
+            <div class="card morph">
+                <div class="card-body">
+                    <h5 class="card-header">Description</h5>
+                    <p id="description"></p>
                 </div>
             </div>
-        </div>    
-    </div><!--end body content-->
+        </div>
+
+      </div>
+   
     
-</div><!--end container-->
-    <br>
-<div class="row" id="foot">
-    <div class="col-md-12" id="footer">
-        <h2>
-            Coding Portfolio
-        </h2>
-    </div>
-</div><!--end foot-->
-<script src="Assets/indexscript.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <script src="Assets/indexscript3.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-
