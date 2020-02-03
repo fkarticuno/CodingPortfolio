@@ -72,4 +72,7 @@ iframe {
         transform: scale(0.50);
         transform-origin: 0 0;
     }
+    br {
+        display: none;
+    }
 }

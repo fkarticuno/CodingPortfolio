@@ -87,7 +87,7 @@ $('document').ready(function(){
     })
 })
 function populate(x,y) {
-    console.log('attempting to populate with', x)
+    //console.log('attempting to populate with', x)
     $('#titles').html(`<a href='${y}'>${title[x].slice(2,title[x].length)}</a> | <a href='${repo[x]}'>${repo[x]}</a>`)
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
