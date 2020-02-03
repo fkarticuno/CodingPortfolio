@@ -22,7 +22,7 @@ var title = [
     "19-PROJECT 3 MONETA"
 ]
 var desc = [
-    "This document outlines my work history and is used in tandem with my coding portfolio to cover more ground.",
+    "This portfolio displays progress and achievements developing basic, intermediate and advanced apps using various languages, packages, frameworks, engines and database models. All culminating into a demo friendly environment to showcase the expertise gained through countless hours of development and refactoring.",
     "In this assignment, I built a professional portfolio site using HTML/CSS. These instructions include a short style guide; follow it to design an aesthetically pleasing layout while creating different kinds of complex HTML elements.",
     "In this assignment, I created two different portfolios. The first will be building my portfolio layout using the Bootstrap CSS Framework. The second will be enhancing the portfolio I made last unit with a mobile-responsive layout.",
     "In this assignment, I created one of two possible computer games: Word Guess or Psychic. These apps will run in the browser, and feature dynamically updated HTML and CSS powered by my JavaScript code.",
