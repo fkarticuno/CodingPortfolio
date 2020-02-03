@@ -2,16 +2,6 @@ html, body {
     background-color: #F7F5F5;
     background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg); 
 }
-/*
-.card-header {
-    background-color: 8CC2DB;
-    color: 93A2B8; 
-}
-
-p, a:visited, a:hover, a {
-    color: 93A2B8;
-}
-*/
 html {
     margin: 5px;
     padding: 0px;
@@ -64,6 +54,9 @@ iframe {
         height: 100px;
         width: 100px;
     }
+    .head {
+        min-height: unset;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -86,6 +79,9 @@ iframe {
     #description, .description {
         font-size: .7em;
     }
+    .head {
+        min-height: unset;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -107,7 +103,10 @@ iframe {
         transform-origin: 0 0;
     }
     #description, .description {
-        font-size: .4em;
+        font-size: .6em;
+    }
+    .head {
+        min-height: unset;
     }
 }
 
@@ -122,7 +121,20 @@ iframe {
         overflow-x: scroll;
         text-align: center;   
     }
-    .card {
+    .card-header {
+        text-align: left;
+    }
+    .card, .card-body, .col-sm-3 {
+        min-height: 210px;
+    }
+    #description, .description {
+        font-size: 1em;
+        height: 200px;
+        max-height: 110px;
+        overflow-x: scroll;
+        text-align: center;
+    }
+    .head {
         min-height: unset;
     }
     iframe {
