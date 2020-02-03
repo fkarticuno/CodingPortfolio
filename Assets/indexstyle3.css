@@ -1,7 +1,21 @@
+html, body {
+    background-color: #F7F5F5;
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg); 
+}
+/*
+.card-header {
+    background-color: 8CC2DB;
+    color: 93A2B8; 
+}
+
+p, a:visited, a:hover, a {
+    color: 93A2B8;
+}
+*/
 html {
     margin: 5px;
     padding: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 img {
     height: 210px;
@@ -26,7 +40,36 @@ iframe {
     transform: scale(0.90);
     
 }
-
 .morph {
     height: 55vh;
+}
+.card-body {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.about {
+    text-align: justify;
+}
+.head {
+    opacity: .5;
+}
+
+
+@media screen and (max-width: 500px) {
+    .thumbs {
+        height: 100px;
+        width: 100px;
+        border-radius: 0px;
+    }
+    .about {
+        height: 200px;
+        overflow-x: scroll;
+        text-align: center; 
+        
+    }
+    iframe {
+        height: 150%;
+        width: 200%;
+        transform: scale(0.50);
+        transform-origin: 0 0;
+    }
 }
