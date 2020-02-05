@@ -41,7 +41,7 @@ var desc = [
     "This project used a Node and Express Web Server, is backed by a MySQL Database an ORM, has both GET and POST routes for retrieving and adding new data was deployed using Heroku (with Data), utilizes at least one new library, package, or technology that we had not discussed in class, has a polished frontend / UI, has folder structure that meets MVC Paradigm and meets good quality coding standards (indentation, scoping, naming).",
     "null",
     "In this assignment, I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I flex my Mongoose and Cheerio muscles to scrape news from another site.",
-    "Moneta is a platform for patients at any stage of Alzheimer's/Dementia to keep their mind and brain stimulated. Brain teasers/memory/image and word association games have been scientifically provedn to be useful throughout the lives of people afflicted with the disease. While additionally, music can play an important role."
+    "Moneta is a platform for patients at any stage of Alzheimer's/Dementia to keep their mind and brain stimulated. Brain teasers/memory/image and word association games have been scientifically proven to be useful throughout the lives of people afflicted with the disease. While additionally, music can play an important role."
 ]
 var repo = [
     "https://fkarticuno.github.io/CodingPortfolio/Assets/Credentials/Resume_2020.pdf",
@@ -64,6 +64,28 @@ var repo = [
     "17",
     "18",
     "https://github.com/vin-cent321/Moneta",
+]
+
+var skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jQuery",
+    "Bootstrap",
+    "JSON",
+    "AJAX", 
+    "API integration",
+    "Firebase",
+    "React.js",
+    "Heroku",
+    "Git",
+    "GitHub",
+    "MySQL",
+    "MongoDB",
+    "Node.js",
+    "Express.js",
+    "User Authentication",
+    "ORM (sequelize)"
 ]
 
 // $('#img01').click(function() {
