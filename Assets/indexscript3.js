@@ -123,10 +123,10 @@ function invt(x) {
     $('.fka').css('filter', `invert(${x})`);
     if (mode === 0) {
         mode = 1; 
-        $('#inv').text('Light Mode')
+        $('#inv').text('Dark Mode')
     } else {
         mode = 0; 
-        $('#inv').text('Dark Mode')
+        $('#inv').text('Light Mode')
     }
 }
 
