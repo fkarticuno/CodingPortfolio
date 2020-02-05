@@ -128,7 +128,7 @@ function invt(x) {
         $('#inv').text('Dark Mode')
     } else {
         mode = 0; 
-        $('#inv').text('Light Mode')
+        $('#inv').text('Light Mode');
     }
 }
 
