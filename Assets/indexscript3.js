@@ -1,4 +1,4 @@
-console.log("linked")
+console.log("JS linked")
 var title = [
     "00-RESUME",
     "01-HTML CSS GIT",
