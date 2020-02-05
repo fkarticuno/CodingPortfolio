@@ -84,7 +84,7 @@ $('document').ready(function(){
             num = num.slice(1)
         }
         populate(num,$(this)[0].alt)
-    })
+    })    
 })
 function populate(x,y) {
     console.log('attempting to populate with', x)
@@ -92,3 +92,4 @@ function populate(x,y) {
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
 }
+

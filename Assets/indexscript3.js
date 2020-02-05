@@ -87,6 +87,7 @@ var skills = [
     "User Authentication",
     "ORM (sequelize)"
 ]
+var mode = 1;
 
 // $('#img01').click(function() {
 //     $('#titles').text(title[1])
@@ -107,12 +108,26 @@ $('document').ready(function(){
         }
         populate(num,$(this)[0].alt)
     })
+    $('#inv').on('click', ()=>invt(mode))
 })
 function populate(x,y) {
     //console.log('attempting to populate with', x)
     $('#titles').html(`<a href='${y}'>${title[x].slice(2,title[x].length)}</a> | <a href='${repo[x]}'>${repo[x]}</a>`)
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
+}
+function invt(x) {
+    $('html')[0].style.filter = `invert(${x})`;
+    $('.thumbs').css('filter', `invert(${x})`);
+    $('.iframe').css('filter', `invert(${x})`);
+    $('.fka').css('filter', `invert(${x})`);
+    if (mode === 0) {
+        mode = 1; 
+        $('#inv').text('Light Mode')
+    } else {
+        mode = 0; 
+        $('#inv').text('Dark Mode')
+    }
 }
 
 $(document).ready(populate(19,"https://mc-moneta.herokuapp.com/"))
