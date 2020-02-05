@@ -89,6 +89,7 @@ var skills = [
 ]
 var mode = 1;
 var head = 0;
+var time = moment().format("LLLL");
 
 // $('#img01').click(function() {
 //     $('#titles').text(title[1])
@@ -111,6 +112,8 @@ $('document').ready(function(){
     })
     $('#inv').on('click', ()=>invt(mode))
     $('#grd').on('click', ()=>grad(head))
+    startTime()
+    populate(19,"https://mc-moneta.herokuapp.com/")
 })
 function populate(x,y) {
     //console.log('attempting to populate with', x)
@@ -149,4 +152,9 @@ function grad(x) {
     }
 }
 
-$(document).ready(populate(19,"https://mc-moneta.herokuapp.com/"))
+function startTime() {
+    $("#time").text( moment().format("LLLL") )
+    t = setTimeout(()=> startTime() , 500);
+}
+
+$(document).ready($('#time').text(time))
