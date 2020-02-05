@@ -88,6 +88,7 @@ var skills = [
     "ORM (sequelize)"
 ]
 var mode = 1;
+var head = 0;
 
 // $('#img01').click(function() {
 //     $('#titles').text(title[1])
@@ -109,6 +110,7 @@ $('document').ready(function(){
         populate(num,$(this)[0].alt)
     })
     $('#inv').on('click', ()=>invt(mode))
+    $('#grd').on('click', ()=>grad(head))
 })
 function populate(x,y) {
     //console.log('attempting to populate with', x)
@@ -127,6 +129,18 @@ function invt(x) {
     } else {
         mode = 0; 
         $('#inv').text('Light Mode')
+    }
+}
+
+function grad(x) {
+    if (head === 0) {
+        $('.card-header').css('background','linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213))')
+        head = 1; 
+        $('#grd').text('Normal')
+    } else {
+        $('.card-header').css('background','unset')
+        head = 0; 
+        $('#grd').text('Gradient')
     }
 }
 
