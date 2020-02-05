@@ -125,22 +125,27 @@ function invt(x) {
     $('.fka').css('filter', `invert(${x})`);
     if (mode === 0) {
         mode = 1; 
-        $('#inv').text('Dark Mode')
+        $('#inv').text('Dark Mode')        
     } else {
         mode = 0; 
-        $('#inv').text('Light Mode');
+        $('#inv').text('Light Mode');               
     }
 }
 
 function grad(x) {
     if (head === 0) {
         $('.card-header').css('background','linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213))')
+        $('body')[0].style.background = 'linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213))';
+        //$('.card').css('background','linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213))')
         head = 1; 
         $('#grd').text('Normal')
     } else {
-        $('.card-header').css('background','unset')
+        $('.card-header').css('background','rgba(0,0,0,.03)')
+        $('body')[0].style.background = 'url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg)'
+        //$('.card').css('background','white')
         head = 0; 
         $('#grd').text('Gradient')
+        
     }
 }
 
