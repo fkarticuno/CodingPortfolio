@@ -42,7 +42,6 @@ iframe {
 }
 .morph {
     height: 30vw;
-    max-height: 348px;
 }
 .card-body {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -63,11 +62,11 @@ iframe {
     margin-left: 10px;
 }
 .scroll {
-    max-height: 100px;
+    max-height: 100%;
 }
 .sc {
     overflow-y: scroll;
-    max-height: 75px;
+    max-height: 85px;
 }
 
 @media screen and (max-width: 1700px) {
