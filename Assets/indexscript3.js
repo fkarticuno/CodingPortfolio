@@ -1,3 +1,4 @@
+
 console.log("JS linked")
 var title = [
     "00-RESUME",
@@ -9,7 +10,7 @@ var title = [
     "06-AJAX",
     "07-FIREBASE",
     "08-PROJECT 1",
-    "09-PORTFOLIO UPDATE",
+    "09-CODING PORTFOLIO",
     "10-NODEJS",
     "11-JS CONSTRUCTORS",
     "12-MYSQL",
@@ -53,7 +54,7 @@ var repo = [
     "6",
     "7",
     "8",
-    "9",
+    "https://github.com/fkarticuno/CodingPortfolio/",
     "10",
     "11",
     "12",
@@ -97,12 +98,6 @@ var time = moment().format("LLLL");
 //     $('iframe').attr('src',$('#img01').attr('alt'))
 // })
 $('document').ready(function(){
-    $('#img11').attr('src','./Assets/Images/00.png')
-    $('#img12').attr('src','./Assets/Images/00.png')
-    $('#img14').attr('src','./Assets/Images/00.png')
-    $('#img17').attr('src','./Assets/Images/00.png')
-    $('#img18').attr('src','./Assets/Images/00.png')
-
     $('.thumbs').on('click',function(){
         num = ($(this)[0].id).slice(3)
         if (num<10) {
@@ -134,7 +129,6 @@ function invt(x) {
         $('#inv').text('Light Mode');               
     }
 }
-
 function grad(x) {
     if (head === 0) {
         $('.card-header').css('background','linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213))')
@@ -151,10 +145,9 @@ function grad(x) {
         
     }
 }
-
 function startTime() {
     $("#time").text( moment().format("LLLL") )
     t = setTimeout(()=> startTime() , 500);
 }
-
+    
 $(document).ready($('#time').text(time))
