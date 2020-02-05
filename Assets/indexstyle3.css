@@ -34,11 +34,11 @@ img:hover {
     margin: 5px;
 }
 iframe {
-    height: 90%;
+    height: 80%;
     width: 100%;
-    transform: scale(0.90);
+    transform: scale(0.80);
     border-radius: 25px;
-    box-shadow: 0 5px 20px 20px rgba(0, 0, 0, 0.14)
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.14)
 }
 .morph {
     height: 30vw;
@@ -61,12 +61,17 @@ iframe {
     display: inline;
     margin-left: 10px;
 }
-.scroll {
-    max-height: 100%;
-}
 .sc {
+    margin-top: -3%;
     overflow-y: scroll;
-    max-height: 100px;
+    max-height: 220px;
+}
+.sc2 {
+    overflow-y: scroll;
+    max-height: 70px;
+}
+#skills, #titles {
+    font-size: 60%;
 }
 
 @media screen and (max-width: 1700px) {
@@ -79,7 +84,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 1400px) {
+ @media screen and (max-width: 1400px) {
     .thumbs {
         height: 75px;
         width: 75px;
@@ -97,14 +102,14 @@ iframe {
         transform-origin: 0 0;
     }
     #description, .description {
-        font-size: .7em;
+        font-size: .9em;
     }
     .head {
         min-height: unset;
     }
 }
 
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
     .thumbs {
         height: 50px;
         width: 50px;
@@ -131,7 +136,7 @@ iframe {
     .morph {
         height: unset;
     }
-}
+} */
 
 @media screen and (max-width: 575px) {
     .thumbs {

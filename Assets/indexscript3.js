@@ -68,6 +68,27 @@ var repo = [
 ]
 
 var skills = [
+    "Google Docs",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "HTML CSS Bootstrap JavaScript JQuery GitHub-Pages",
+    "10",
+    "11",
+    "12",
+    "CSS Bootstrap HTML JavaScript MySQL JQuery",
+    "14",
+    "CSS Bootstrap HTML JavaScript MySQL Sequelize JQuery",
+    "Bootstrap HTML CSS JQuery JavaScript MySQL Heroku Express Sequelize",
+    "17",
+    "18",
+    "MongoDB Express.js React.js Node.js Axios Passport Moment OpenWeather-API",
+    
     "HTML",
     "CSS",
     "JavaScript",
@@ -112,9 +133,12 @@ $('document').ready(function(){
 })
 function populate(x,y) {
     //console.log('attempting to populate with', x)
-    $('#titles').html(`<a href='${y}'>${title[x].slice(2,title[x].length)}</a> | <a href='${repo[x]}'>${repo[x]}</a>`)
+    $('#titles').html(`<a href='${y}'>${title[x].slice(2,title[x].length)}</a> |
+     <a href='${repo[x]}'>${repo[x]}</a>`)
     $('#description').text(desc[x])
     $('iframe').attr('src',y)
+    $('#skills').text(`${skills[x]}`)
+
 }
 function invt(x) {
     $('html')[0].style.filter = `invert(${x})`;
