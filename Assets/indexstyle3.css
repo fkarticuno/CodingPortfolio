@@ -70,9 +70,6 @@ iframe {
     overflow-y: scroll;
     max-height: 70px;
 }
-#skills, #titles {
-    font-size: 60%;
-}
 
 @media screen and (max-width: 1700px) {
     .thumbs {
@@ -154,6 +151,12 @@ iframe {
     }
     .card, .card-body, .col-sm-3 {
         min-height: 210px;
+    }
+    .morph {
+        height: unset;
+    }
+    #skills, #titles {
+        font-size: 90%;
     }
     #description, .description {
         font-size: 1em;
