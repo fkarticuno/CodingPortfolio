@@ -14,9 +14,9 @@ var title = [
     "10-NODEJS",
     "11-JS CONSTRUCTORS",
     "12-MYSQL",
-    "13-EXPRESS",
+    "13-EXPRESS FRIEND FINDER",
     "14-HANDLEBARS",
-    "15-SEQUELIZE",
+    "15-SEQUELIZE EAT-DA-BURGER",
     "16-PROJECT 2 Drinking Well",
     "17-PROJECT 2",
     "18-MONGO & MONGOOSE",
@@ -126,10 +126,19 @@ $('document').ready(function(){
         }
         populate(num,$(this)[0].alt)
     })
+    
+    $('.thumbs').on('mouseover',function() {
+        num = ($(this)[0].id).slice(3)
+        if (num<10) {
+            num = num.slice(1)
+        }
+        $('.projectName').text(`| ${title[num].slice(3)}`)
+    })
     $('#inv').on('click', ()=>invt(mode))
     $('#grd').on('click', ()=>grad(head))
     startTime()
     populate(19,"https://mc-moneta.herokuapp.com/")
+
 })
 function populate(x,y) {
     //console.log('attempting to populate with', x)
