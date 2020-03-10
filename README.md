@@ -1,4 +1,4 @@
-# CodingPortfolio
+# CodingPortfolio 4/5
 
  This portfolio displays progress and achievements developing basic, intermediate and advanced apps using various languages, packages, frameworks, engines and database models. All culminating into a demo friendly environment to showcase the expertise gained through countless hours of development and refactoring.
 
@@ -22,8 +22,8 @@ See the list of [contributors](https://github.com/fkarticuno/CodingPortfolio/gra
 ## Planned updates
 
 New revisions of Portfolio will contain these example apps to showcase my skills in development
-1. Web application using api
-2. Brochure site
-3. E-commerce site
-4. Personal Portfolio
-5. Simple game
+1. [Web application using api](#)
+2. [Brochure site](https://github.com/fkarticuno/ChipsRestaurant)
+3. [E-commerce site](https://github.com/fkarticuno/ShopAround)
+4. [Personal Portfolio](https://github.com/fkarticuno/CodingPortfolio)
+5. [Simple game](https://github.com/fkarticuno/JSpiano)
